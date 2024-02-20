@@ -1,0 +1,20 @@
+<p class="h5">Cadastrar Usuário</p>
+<hr>
+<form [formGroup]="usuarioForm">
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <label for="txtNome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="txtNome" formControlName="txtNome">
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+                <label for="txtIdade" class="form-label">Idade</label>
+                <input type="text" class="form-control" id="txtIdade" formControlName="txtIdade">
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-sm" [disabled]="usuarioForm.invalid">Cadastrar</button>        
+    <button type="button" class="btn btn-danger btn-sm ms-2" onclick="javascript: history.go(-1)">Voltar</button>        
+</form>

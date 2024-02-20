@@ -1,0 +1,26 @@
+<p class="h5">Lista Usuários</p>
+<hr>
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Idade</th>
+          <th scope="col">Status</th>
+          <th scope="col">Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of UsuarioList">
+          <th scope="row">{{usuario.id}}</th>
+          <td>{{usuario.nome}}</td>
+          <td>{{usuario.idade}}</td>
+          <td>{{usuario.ativo}}</td>
+          <td>
+            <button type="button" class="btn btn-danger btn-sm">Remover</button>
+            <button type="button" class="btn btn-secondary btn-sm ms-2">Editar</button>
+          </td>
+        </tr>
+      </tbody>          
+</table>
+<a routerLink="/usuario/cadastrar" class="btn btn-primary btn-sm">Cadastrar</a>

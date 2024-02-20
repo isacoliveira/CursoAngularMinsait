@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { ListarUsuarioComponent } from './pages/usuario/listar-usuario/listar-usuario.component';
-import { ListarProdutoComponent } from './pages/produto/listar-produto/listar-produto.component';
+import { HomeComponent } from './modules/home/home.component';
+import { ListaUsuarioComponent } from './modules/usuario/lista-usuario/lista-usuario.component';
+import { ListaProdutoComponent } from './modules/produto/lista-produto/lista-produto.component';
+import { CadastrarUsuarioComponent } from './modules/usuario/cadastrar-usuario/cadastrar-usuario.component';
 
 const routes: Routes = [
-  { path: ''        , redirectTo: 'home'                , pathMatch: 'full' },
-  { path: 'home'    , component: HomeComponent          , pathMatch: 'full' },
-  { path: 'ListarUsuario' , component: ListarUsuarioComponent , pathMatch: 'full' },
-  { path: 'ListarProduto' , component: ListarProdutoComponent , pathMatch: 'full' },
+  { path: ''                  , component: HomeComponent              },
+  { path: 'home'              , component: HomeComponent              },
+  { path: 'usuario'           , component: ListaUsuarioComponent      },
+  { path: 'usuario/cadastrar' , component: CadastrarUsuarioComponent  },
+  { path: 'produto'           , component: ListaProdutoComponent      },
 ];
 
 @NgModule({
