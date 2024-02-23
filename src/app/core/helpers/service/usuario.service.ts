@@ -10,6 +10,22 @@ export class UsuarioService {
 
   constructor(private http: HttpClient) { }
   
+  cadastrarUsuario(usuario: Usuario) {
+    return this.http.post<Usuario>(`${this.apiUrl}/usuarios`, usuario);
+  }
+  
+  editarUsuario(usuario: Usuario) {
+    return this.http.put(`${this.apiUrl}/usuarios/${usuario.id}`, usuario);
+  }
+
+  consultarUsuario(idUsuario: string | null) {
+    return this.http.get<Usuario>(`${this.apiUrl}/usuarios/${idUsuario}`);
+  }
+  
+  excluirUsuario(idUsuario: number | undefined) {
+    return this.http.delete(`${this.apiUrl}/usuarios/${idUsuario}`);
+  }
+
   Listar() {
     return this.http.get<Usuario[]>(`${this.apiUrl}/usuarios`);
   }

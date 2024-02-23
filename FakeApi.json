@@ -10,7 +10,37 @@
       "id": 2,
       "nome": "Lucas Ferreira",
       "idade": 35,
+      "ativo": true
+    },
+    {
+      "id": 3,
+      "nome": "Isac Oliveira",
+      "idade": "39",
       "ativo": false
+    },
+    {
+      "nome": "Maria Martins de Souza",
+      "idade": "72",
+      "ativo": true,
+      "id": 4
+    },
+    {
+      "nome": "Yohan Horvath",
+      "idade": "9",
+      "ativo": true,
+      "id": 5
+    },
+    {
+      "nome": "Sophia Horvath",
+      "idade": "12",
+      "ativo": true,
+      "id": 6
+    },
+    {
+      "nome": "Sandra Oliveira",
+      "idade": "48",
+      "ativo": true,
+      "id": 7
     }
   ]
 }

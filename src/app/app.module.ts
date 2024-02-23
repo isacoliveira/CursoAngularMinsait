@@ -11,6 +11,7 @@ import { FooterComponent } from './core/layout/footer/footer.component';
 import { LayoutComponent } from './core/layout/layout/layout.component';
 import { ListaUsuarioComponent } from './modules/usuario/lista-usuario/lista-usuario.component';
 import { ListaProdutoComponent } from './modules/produto/lista-produto/lista-produto.component';
+import { EditarUsuarioComponent } from './modules/usuario/editar-usuario/editar-usuario.component';
 import { CadastrarUsuarioComponent } from './modules/usuario/cadastrar-usuario/cadastrar-usuario.component';
 
 @NgModule({
@@ -22,6 +23,7 @@ import { CadastrarUsuarioComponent } from './modules/usuario/cadastrar-usuario/c
     LayoutComponent,
     ListaUsuarioComponent,
     ListaProdutoComponent,
+    EditarUsuarioComponent,
     CadastrarUsuarioComponent,
   ],
   imports: [
