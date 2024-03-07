@@ -21,6 +21,11 @@
             <a routerLink="/usuario/editar/{{usuario.id}}" type="button" class="btn btn-secondary btn-sm ms-2">Editar</a>
           </td>
         </tr>
+        <tr *ngIf="UsuarioList.length == 0">
+          <td colspan="5" style="color: red;">
+            Nenhum registro encontrado
+          </td>
+      </tr>
       </tbody>          
 </table>
 <a routerLink="/usuario/cadastrar" class="btn btn-primary btn-sm">Cadastrar</a>

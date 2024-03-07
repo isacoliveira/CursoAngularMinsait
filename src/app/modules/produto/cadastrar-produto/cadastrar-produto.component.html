@@ -1,0 +1,34 @@
+<p class="h5">Cadastrar Produto</p>
+<hr>
+<form [formGroup]="produtoForm">
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Produto</label>
+                <input type="text" class="form-control" id="nome" formControlName="nome" maxlength="20">
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+                <label for="quantidade" class="form-label">Quantidade</label>
+                <input type="number" class="form-control" id="quantidade" formControlName="quantidade" maxlength="4">
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb-3">
+                <label for="preco" class="form-label">Preço</label>
+                <input type="text" class="form-control" id="preco" formControlName="preco">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <label for="codigoBarra" class="form-label">Código de Barra</label>
+                <input type="text" class="form-control" id="codigoBarra" formControlName="codigoBarra" maxlength="30">
+            </div>
+        </div>
+    </div>    
+    <button type="submit" class="btn btn-primary btn-sm" [disabled]="produtoForm.invalid" (click)="cadastrarProduto()">Cadastrar</button>        
+    <button type="button" class="btn btn-danger btn-sm ms-2" onclick="javascript: history.go(-1)">Voltar</button>        
+</form>

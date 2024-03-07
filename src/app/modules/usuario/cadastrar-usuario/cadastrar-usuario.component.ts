@@ -6,7 +6,7 @@ import { UsuarioService } from 'src/app/core/helpers/service/usuario.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-cadastrar-usuario',
+  selector    : 'app-cadastrar-usuario',
   templateUrl : './cadastrar-usuario.component.html',
   styleUrls   : ['./cadastrar-usuario.component.css']
 })

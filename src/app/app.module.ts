@@ -13,6 +13,8 @@ import { ListaUsuarioComponent } from './modules/usuario/lista-usuario/lista-usu
 import { ListaProdutoComponent } from './modules/produto/lista-produto/lista-produto.component';
 import { EditarUsuarioComponent } from './modules/usuario/editar-usuario/editar-usuario.component';
 import { CadastrarUsuarioComponent } from './modules/usuario/cadastrar-usuario/cadastrar-usuario.component';
+import { EditarProdutoComponent } from './modules/produto/editar-produto/editar-produto.component';
+import { CadastrarProdutoComponent } from './modules/produto/cadastrar-produto/cadastrar-produto.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { CadastrarUsuarioComponent } from './modules/usuario/cadastrar-usuario/c
     ListaProdutoComponent,
     EditarUsuarioComponent,
     CadastrarUsuarioComponent,
+    EditarProdutoComponent,
+    CadastrarProdutoComponent,
   ],
   imports: [
     FormsModule,

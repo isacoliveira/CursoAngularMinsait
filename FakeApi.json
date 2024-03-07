@@ -42,5 +42,21 @@
       "ativo": true,
       "id": 7
     }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Leite em pó",
+      "codigoBarra": "666299537",
+      "quantidade": 10,
+      "preco": "5.99"
+    },
+    {
+      "nome": "Leite de Caixa",
+      "codigoBarra": "131745872410436865",
+      "quantidade": 51,
+      "preco": "6.99",
+      "id": 2
+    }
   ]
 }

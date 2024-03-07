@@ -1,7 +1,7 @@
+import Swal from 'sweetalert2';
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from 'src/app/core/helpers/model/usuario';
 import { UsuarioService } from 'src/app/core/helpers/service/usuario.service';
-import Swal from 'sweetalert2';
 
 @Component({
   selector    : 'app-lista-usuario',
